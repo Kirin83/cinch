@@ -218,7 +218,7 @@ export function StockTabs({ data }: { data: GetStockResponse }) {
           busy ? (
             <LoadingInline label="Reading holders…" />
           ) : (
-            <p className="mt-6 text-sm text-muted">Holders not indexed yet.</p>
+            <p className="mt-6 text-sm text-muted">Holders unavailable. Blockscout did not return a list for this token.</p>
           )
         ) : (
           <HoldersList rows={holders} />

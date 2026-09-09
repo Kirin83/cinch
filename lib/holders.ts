@@ -48,7 +48,11 @@ export async function fetchTokenHolders(opts: {
   try {
     const url = `${BLOCKSCOUT}/${CHAIN_ID}/api/v2/tokens/${token}/holders?items_count=50`;
     const metaUrl = `${BLOCKSCOUT}/${CHAIN_ID}/api/v2/tokens/${token}`;
-    const headers = { authorization: `Bearer ${key}`, accept: "application/json" };
+    const headers = {
+      authorization: `Bearer ${key}`,
+      accept: "application/json",
+      "user-agent": "cinch.report/holders (https://cinch.report)",
+    };
     const res = await fetch(url, { headers, cache: "no-store", signal: AbortSignal.timeout(8_000) });
     if (!res.ok) {
       cache.set(token, { at: Date.now(), rows: null, ttl: FAIL_CACHE_MS });
