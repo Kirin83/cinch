@@ -1288,6 +1288,7 @@ async function loadPairsUncached(query: GetPairsQuery = {}): Promise<GetPairsRes
       ticker: string;
       contract_hex: string;
       tick_spacing: number | null;
+      graduated: boolean;
       stock_bal_raw: string | null;
       volume_usd_24h: string | null;
       dex_usdg: string | null;
@@ -1598,6 +1599,7 @@ async function loadMemesUncached(query: GetMemesQuery = {}): Promise<GetMemesRes
       decimals: number | null;
       total_supply_raw: string | null;
       pool_id: string | null;
+      graduated: boolean;
       token0: string;
       token1: string;
       stock_ticker: string | null;
