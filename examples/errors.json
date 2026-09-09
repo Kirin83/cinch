@@ -1,0 +1,53 @@
+{
+  "not_stock_token": {
+    "status": 404,
+    "path": "/api/stocks/FAKE",
+    "body": {
+      "error": {
+        "code": "NOT_STOCK_TOKEN",
+        "message": "Not a Robinhood Stock Token. Check the address, not the ticker."
+      }
+    }
+  },
+  "not_in_registry": {
+    "status": 404,
+    "path": "/api/launch/prefill?ticker=XYZ",
+    "body": {
+      "error": {
+        "code": "NOT_IN_REGISTRY",
+        "message": "That ticker is not in the Robinhood registry."
+      }
+    }
+  },
+  "not_indexed": {
+    "status": 404,
+    "path": "/api/tokens/0xdead000000000000000000000000000000000000",
+    "body": {
+      "error": {
+        "code": "NOT_INDEXED",
+        "message": "Token not indexed yet. Paste the contract on Live in a minute."
+      }
+    }
+  },
+  "chain_unreadable": {
+    "status": 500,
+    "path": "/api/stocks",
+    "body": {
+      "error": {
+        "code": "CHAIN_UNREADABLE",
+        "message": "Could not read the chain. Numbers stale. Last good block …",
+        "last_good_block": 56201000
+      }
+    }
+  },
+  "rate_limit": {
+    "status": 429,
+    "path": "/api/search?q=HIMS",
+    "body": {
+      "error": {
+        "code": "RATE_LIMIT",
+        "message": "Slow down."
+      }
+    }
+  }
+}

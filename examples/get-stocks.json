@@ -1,0 +1,98 @@
+{
+  "indexer": {
+    "head": {
+      "block_number": 56201104,
+      "taken_at": "2026-09-07T14:04:12.000Z",
+      "lag_seconds": 8
+    },
+    "status": "synced"
+  },
+  "registry": {
+    "asset_count": 196,
+    "synced_at": "2026-09-07T14:00:00.000Z"
+  },
+  "sort": "meme_vol",
+  "order": "desc",
+  "filter": "all",
+  "hide_empty": false,
+  "stocks": [
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "asset_type": "equity",
+      "sectors": ["meme_stocks"],
+      "is_active": true,
+      "contract": "0x05a3d8e2F91B7A6Cd4E8F0123456789ABcde222B",
+      "contract_hex": "0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b",
+      "oracle_price_usd": 29.1,
+      "dex_price_usd": 31.04,
+      "premium_bps": 667,
+      "float_locked_pct": 0.531,
+      "float_locked_pct_change_24h": 0.021,
+      "float_locked_raw": "31198000000000000000000",
+      "total_supply_raw": "58714000000000000000000",
+      "meme_pair_count": 12,
+      "new_pair_count_24h": 1,
+      "meme_vol_24h_usd": 18400000,
+      "spot_vol_24h_usd": 4380952.38,
+      "meme_pressure": 4.2,
+      "as_of": {
+        "block_number": 56201104,
+        "taken_at": "2026-09-07T14:04:12.000Z",
+        "lag_seconds": 8
+      }
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "asset_type": "equity",
+      "sectors": ["meme_stocks"],
+      "is_active": true,
+      "contract": "0xA1c0000000000000000000000000000000000AMC",
+      "contract_hex": "0xa1c0000000000000000000000000000000000amc",
+      "oracle_price_usd": 4.12,
+      "dex_price_usd": 4.08,
+      "premium_bps": -97,
+      "float_locked_pct": 0.21,
+      "float_locked_pct_change_24h": -0.004,
+      "float_locked_raw": "210000000000000000000000",
+      "total_supply_raw": "1000000000000000000000000",
+      "meme_pair_count": 4,
+      "new_pair_count_24h": 0,
+      "meme_vol_24h_usd": 2100000,
+      "spot_vol_24h_usd": 9000000,
+      "meme_pressure": 0.233,
+      "as_of": {
+        "block_number": 56201104,
+        "taken_at": "2026-09-07T14:04:12.000Z",
+        "lag_seconds": 8
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "asset_type": "equity",
+      "sectors": ["mega", "ai"],
+      "is_active": true,
+      "contract": "0xd0601CE157Db5bdC3162BbaC2a2C8aF5320D9EEC",
+      "contract_hex": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+      "oracle_price_usd": 128.4,
+      "dex_price_usd": 129.1,
+      "premium_bps": 55,
+      "float_locked_pct": 0.042,
+      "float_locked_pct_change_24h": 0.001,
+      "float_locked_raw": "4200000000000000000000",
+      "total_supply_raw": "100000000000000000000000",
+      "meme_pair_count": 3,
+      "new_pair_count_24h": 0,
+      "meme_vol_24h_usd": 890000,
+      "spot_vol_24h_usd": 41200000,
+      "meme_pressure": 0.022,
+      "as_of": {
+        "block_number": 56201104,
+        "taken_at": "2026-09-07T14:04:12.000Z",
+        "lag_seconds": 8
+      }
+    }
+  ]
+}

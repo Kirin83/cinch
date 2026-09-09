@@ -1,0 +1,26 @@
+{
+  "head": {
+    "last_block": 56201104,
+    "last_ok_at": "2026-09-07T14:04:12.000Z",
+    "lag_seconds": 8
+  },
+  "pons": {
+    "last_block": 56201104,
+    "last_ok_at": "2026-09-07T14:04:12.000Z",
+    "lag_seconds": 8
+  },
+  "long": {
+    "last_block": 0,
+    "last_ok_at": "2026-09-07T14:04:12.000Z",
+    "lag_seconds": null
+  },
+  "uniswap_v4": {
+    "last_block": 56201100,
+    "last_ok_at": "2026-09-07T14:04:04.000Z",
+    "lag_seconds": 16
+  },
+  "registry": {
+    "asset_count": 196,
+    "synced_at": "2026-09-07T14:00:00.000Z"
+  }
+}

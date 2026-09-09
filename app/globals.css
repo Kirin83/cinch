@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+:root {
+  --bg0: #181818;
+  --bg1: #212121;
+  --moss: #2b2b2b;
+  --leaf: #46ff04;
+  --spore: #46ff04;
+  --ink: #f5f5f5;
+  --muted: #939393;
+  --line: #2b2b2b;
+  --edge: #323232;
+  --panel: #212121;
+  --canonical: #46ff04;
+  --danger: #f21a3f;
+  --caution: #ffcc02;
+  --on-leaf: #181818;
+  --r-control: 15px;
+  --r-card: 20px;
+}
+
+@theme inline {
+  --color-bg: var(--bg0);
+  --color-elev: var(--bg1);
+  --color-line: var(--line);
+  --color-edge: var(--edge);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-spore: var(--spore);
+  --color-leaf: var(--leaf);
+  --color-moss: var(--moss);
+  --color-panel: var(--panel);
+  --color-canonical: var(--canonical);
+  --color-danger: var(--danger);
+  --color-caution: var(--caution);
+  --color-on-leaf: var(--on-leaf);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-archivo);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  html {
+    background: var(--bg0);
+    color: var(--ink);
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: var(--font-sans), Inter, ui-sans-serif, system-ui, sans-serif;
+    background: var(--bg0);
+    color: var(--ink);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+.bg-leaf {
+  color: var(--on-leaf);
+}
+
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: var(--bg0);
+}
+
+.atmosphere::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.043) 1px, transparent 0),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.043) 1px, transparent 0);
+  background-size: 56px 56px, 56px 56px;
+}
+
+.display,
+.font-display {
+  font-family: var(--font-display), var(--font-sans), Inter, sans-serif;
+  font-weight: 700;
+  font-stretch: 125%;
+  letter-spacing: -0.01em;
+}
+
+.seg {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+  background: var(--bg1);
+  border-radius: var(--r-control);
+  padding: 0.25rem;
+}
+
+.seg-item {
+  border-radius: 11px;
+  padding: 0.4rem 0.8rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  transition: color 0.12s, background-color 0.12s;
+}
+
+.seg-item:hover {
+  color: var(--ink);
+}
+
+.seg-item[data-active="true"] {
+  color: var(--ink);
+  background: var(--moss);
+}
+
+.card-well {
+  background: var(--moss);
+  border-radius: var(--r-card);
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise {
+  animation: rise 0.55s ease both;
+}
+
+@keyframes spin-leaf {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load-scan {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(220%);
+    opacity: 0;
+  }
+}
+
+@keyframes load-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes load-bar {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.load-ring {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--moss);
+  border-top-color: var(--leaf);
+  animation: spin-leaf 0.85s linear infinite;
+}
+
+.load-scan {
+  position: relative;
+  overflow: hidden;
+  height: 2px;
+  background: var(--moss);
+}
+
+.load-scan::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, var(--leaf), transparent);
+  animation: load-scan 1.6s ease-in-out infinite;
+}
+
+.load-skel {
+  height: 2.75rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--moss) 0%, var(--edge) 50%, var(--moss) 100%);
+  background-size: 200% 100%;
+  animation: load-bar 1.4s ease infinite;
+}
+
+.load-dot {
+  color: var(--leaf);
+  animation: load-pulse 1.2s ease-in-out infinite;
+}

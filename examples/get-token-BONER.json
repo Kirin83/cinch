@@ -1,0 +1,112 @@
+{
+  "indexer": {
+    "head": {
+      "block_number": 56201104,
+      "taken_at": "2026-09-07T14:04:12.000Z",
+      "lag_seconds": 8
+    },
+    "status": "synced"
+  },
+  "token": {
+    "address": "0xcc0000000000000000000000000000000000boner",
+    "symbol": "BONER",
+    "name": "BONER",
+    "decimals": 18,
+    "created_at": "2026-09-05T14:04:12.000Z",
+    "creator": "0x1111111111111111111111111111111111111111",
+    "launchpad": "pons",
+    "is_stock_token": false,
+    "redirect_to_stock": null
+  },
+  "as_of": {
+    "block_number": 56201104,
+    "taken_at": "2026-09-07T14:04:12.000Z",
+    "lag_seconds": 8
+  },
+  "underlying": {
+    "pair_quality": "canonical",
+    "pool_address": "0xbb0000000000000000000000000000000000boner",
+    "dex": "pons_curve",
+    "launchpad": "pons",
+    "quote": {
+      "ticker": "HIMS",
+      "contract": "0x05a3d8e2F91B7A6Cd4E8F0123456789ABcde222B",
+      "contract_hex": "0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b",
+      "is_official": true
+    },
+    "stock_in_lp": {
+      "raw": "31198000000000000000000",
+      "amount": "31198",
+      "decimals": 18,
+      "symbol": "HIMS"
+    },
+    "stock_in_lp_pct_of_supply": 0.531
+  },
+  "fake_underlying": null,
+  "risk": {
+    "grade": "caution",
+    "checked_at": "2026-09-07T14:04:12.000Z",
+    "owner": "0x0000000000000000000000000000000000000000",
+    "owner_renounced": true,
+    "can_mint": false,
+    "can_pause": false,
+    "can_blacklist": false,
+    "buy_tax_bps": 0,
+    "sell_tax_bps": 0,
+    "lp_locked": false,
+    "honeypot_signal": false,
+    "top10_pct": 0.38,
+    "creator_launch_count": 14,
+    "reasons": [
+      {
+        "code": "BUNDLE_FIRST_BUYS",
+        "severity": "caution",
+        "text": "First buyers share one funding source"
+      },
+      {
+        "code": "HIGH_CONCENTRATION",
+        "severity": "caution",
+        "text": "Top 10 hold over 30%"
+      },
+      {
+        "code": "LP_UNLOCKED",
+        "severity": "caution",
+        "text": "Liquidity is not locked"
+      }
+    ]
+  },
+  "market": {
+    "chart_url": "https://dexscreener.com/robinhood/0xbb0000000000000000000000000000000000boner",
+    "volume_usd_1h": 410000,
+    "volume_usd_6h": 2800000,
+    "volume_usd_24h": 12200000,
+    "buys_24h": 1840,
+    "sells_24h": 1290,
+    "traders_24h": 612
+  },
+  "people": {
+    "creator": {
+      "address": "0x1111111111111111111111111111111111111111",
+      "launch_count": 14,
+      "explorer_url": "https://explorer.robinhood.com/address/0x1111111111111111111111111111111111111111"
+    },
+    "holders": [
+      {
+        "address": "0xbb0000000000000000000000000000000000boner",
+        "balance": {
+          "raw": "400000000000000000000000000",
+          "amount": "400000000",
+          "decimals": 18,
+          "symbol": "BONER"
+        },
+        "pct_of_supply": 0.4,
+        "is_pool": true
+      }
+    ]
+  },
+  "swap_urls": {
+    "pons": "https://www.ponsfamily.com/launchpad/0xcc0000000000000000000000000000000000boner",
+    "uniswap": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b&outputCurrency=0xcc0000000000000000000000000000000000boner",
+    "dexscreener": "https://dexscreener.com/robinhood/0xbb0000000000000000000000000000000000boner"
+  }
+}

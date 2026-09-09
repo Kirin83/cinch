@@ -1,0 +1,7 @@
+{
+  "ticker": "NVDA",
+  "name": "NVIDIA",
+  "contract": "0xd0601CE157Db5bdC3162BbaC2a2C8aF5320D9EEC",
+  "contract_hex": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+  "pons_url": "https://www.ponsfamily.com/launchpad/create"
+}

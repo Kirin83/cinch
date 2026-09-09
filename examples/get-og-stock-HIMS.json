@@ -1,0 +1,23 @@
+{
+  "type": "stock",
+  "ticker": "HIMS",
+  "name": "Hims & Hers",
+  "float_locked_pct": 0.53,
+  "top_meme_symbol": "BONER",
+  "top_meme_stock_in_lp": {
+    "raw": "31198000000000000000000",
+    "amount": "31198",
+    "decimals": 18,
+    "symbol": "HIMS"
+  },
+  "onchain_supply": {
+    "raw": "58714000000000000000000",
+    "amount": "58714",
+    "decimals": 18,
+    "symbol": "HIMS"
+  },
+  "premium_bps": 667,
+  "meme_vol_24h_usd": 410000,
+  "meme_pair_count": 12,
+  "url": "https://cinch.report/s/HIMS"
+}

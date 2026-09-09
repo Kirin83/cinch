@@ -1,0 +1,117 @@
+{
+  "indexer": {
+    "head": {
+      "block_number": 56201104,
+      "taken_at": "2026-09-07T14:04:12.000Z",
+      "lag_seconds": 8
+    },
+    "status": "synced"
+  },
+  "stock": {
+    "ticker": "HIMS",
+    "name": "Hims & Hers Health",
+    "asset_type": "equity",
+    "sectors": ["meme_stocks"],
+    "is_active": true,
+    "contract": "0x05a3d8e2F91B7A6Cd4E8F0123456789ABcde222B",
+    "contract_hex": "0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b",
+    "decimals": 18,
+    "explorer_url": "https://explorer.robinhood.com/address/0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b"
+  },
+  "hero": {
+    "float_locked_pct": 0.531,
+    "locked_in_meme_lps": {
+      "raw": "31198000000000000000000",
+      "amount": "31198",
+      "decimals": 18,
+      "symbol": "HIMS"
+    },
+    "onchain_supply": {
+      "raw": "58714000000000000000000",
+      "amount": "58714",
+      "decimals": 18,
+      "symbol": "HIMS"
+    },
+    "oracle_price_usd": 29.1,
+    "dex_price_usd": 31.04,
+    "premium_bps": 667,
+    "meme_pressure": 4.2,
+    "meme_pair_count": 12,
+    "meme_vol_24h_usd": 18400000,
+    "spot_vol_24h_usd": 4380952.38
+  },
+  "as_of": {
+    "block_number": 56201104,
+    "taken_at": "2026-09-07T14:04:12.000Z",
+    "lag_seconds": 8
+  },
+  "meme_pairs": [
+    {
+      "pool_address": "0xbb0000000000000000000000000000000000boner",
+      "dex": "pons_curve",
+      "launchpad": "pons",
+      "pair_quality": "canonical",
+      "pool_kind": "meme",
+      "token": {
+        "address": "0xcc0000000000000000000000000000000000boner",
+        "symbol": "BONER",
+        "name": "BONER",
+        "created_at": "2026-09-05T14:04:12.000Z"
+      },
+      "age_seconds": 172800,
+      "fdv_usd": 60100000,
+      "stock_in_lp": {
+        "raw": "31198000000000000000000",
+        "amount": "31198",
+        "decimals": 18,
+        "symbol": "HIMS"
+      },
+      "stock_in_lp_pct_of_supply": 0.531,
+      "volume_usd_24h": 12200000,
+      "risk": {
+        "grade": "caution",
+        "summary": "bundled first buys",
+        "reasons": [
+          {
+            "code": "BUNDLE_FIRST_BUYS",
+            "severity": "caution",
+            "text": "First buyers share one funding source"
+          },
+          {
+            "code": "HIGH_CONCENTRATION",
+            "severity": "caution",
+            "text": "Top 10 hold over 30%"
+          }
+        ]
+      },
+      "chart_url": "https://dexscreener.com/robinhood/0xbb0000000000000000000000000000000000boner",
+      "swap_urls": {
+        "pons": "https://www.ponsfamily.com/launchpad/0xcc0000000000000000000000000000000000boner",
+        "uniswap": "https://app.uniswap.org/swap?chain=robinhood&inputCurrency=0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b&outputCurrency=0xcc0000000000000000000000000000000000boner",
+        "dexscreener": "https://dexscreener.com/robinhood/0xbb0000000000000000000000000000000000boner"
+      }
+    }
+  ],
+  "spot_pools": [
+    {
+      "pool_address": "0xdd0000000000000000000000000000000000spot",
+      "dex": "uniswap_v4",
+      "pair_quality": "canonical",
+      "pool_kind": "spot",
+      "quote": "USDG",
+      "stock_in_lp": {
+        "raw": "8000000000000000000000",
+        "amount": "8000",
+        "decimals": 18,
+        "symbol": "HIMS"
+      },
+      "reserve_usd": 248000,
+      "volume_usd_24h": 4100000
+    }
+  ],
+  "holders": null,
+  "og": {
+    "title": "HIMS is 53% locked",
+    "url": "https://cinch.report/og/stock/HIMS"
+  }
+}

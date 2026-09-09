@@ -1,0 +1,25 @@
+{
+  "storage_key": "float.watchlist.v1",
+  "local": {
+    "version": 1,
+    "tickers": ["HIMS", "NVDA"]
+  },
+  "hydrated": [
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "float_locked_pct": 0.531,
+      "float_locked_pct_change_24h": 0.021,
+      "new_pair_count_24h": 1,
+      "path": "/s/HIMS"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "float_locked_pct": 0.042,
+      "float_locked_pct_change_24h": 0.001,
+      "new_pair_count_24h": 0,
+      "path": "/s/NVDA"
+    }
+  ]
+}

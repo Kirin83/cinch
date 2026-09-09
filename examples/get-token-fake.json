@@ -1,0 +1,105 @@
+{
+  "indexer": {
+    "head": {
+      "block_number": 56201104,
+      "taken_at": "2026-09-07T14:04:12.000Z",
+      "lag_seconds": 8
+    },
+    "status": "synced"
+  },
+  "token": {
+    "address": "0x222222222222222222222222222222222222nvda",
+    "symbol": "NVDA2",
+    "name": "NVDA2",
+    "decimals": 18,
+    "created_at": "2026-09-07T14:04:00.000Z",
+    "creator": "0x3333333333333333333333333333333333333333",
+    "launchpad": "uniswap",
+    "is_stock_token": false,
+    "redirect_to_stock": null
+  },
+  "as_of": {
+    "block_number": 56201104,
+    "taken_at": "2026-09-07T14:04:12.000Z",
+    "lag_seconds": 8
+  },
+  "underlying": {
+    "pair_quality": "fake_underlying",
+    "pool_address": "0x444444444444444444444444444444444444fake",
+    "dex": "uniswap_v4",
+    "launchpad": "uniswap",
+    "quote": {
+      "ticker": "NVDA",
+      "contract": "0xabcd000000000000000000000000000000001234",
+      "contract_hex": "0xabcd000000000000000000000000000000001234",
+      "is_official": false
+    },
+    "stock_in_lp": {
+      "raw": "1000000000000000000000",
+      "amount": "1000",
+      "decimals": 18,
+      "symbol": "NVDA"
+    },
+    "stock_in_lp_pct_of_supply": null
+  },
+  "fake_underlying": {
+    "claimed_ticker": "NVDA",
+    "official": {
+      "ticker": "NVDA",
+      "contract": "0xd0601CE157Db5bdC3162BbaC2a2C8aF5320D9EEC",
+      "contract_hex": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    },
+    "this_contract": "0xAbcd000000000000000000000000000000001234",
+    "this_contract_hex": "0xabcd000000000000000000000000000000001234"
+  },
+  "risk": {
+    "grade": "danger",
+    "checked_at": "2026-09-07T14:04:12.000Z",
+    "owner": "0x3333333333333333333333333333333333333333",
+    "owner_renounced": false,
+    "can_mint": true,
+    "can_pause": false,
+    "can_blacklist": false,
+    "buy_tax_bps": 0,
+    "sell_tax_bps": 0,
+    "lp_locked": false,
+    "honeypot_signal": false,
+    "top10_pct": 0.62,
+    "creator_launch_count": 9,
+    "reasons": [
+      {
+        "code": "FAKE_UNDERLYING",
+        "severity": "danger",
+        "text": "Quote is not an official Stock Token"
+      },
+      {
+        "code": "MINT_ENABLED",
+        "severity": "danger",
+        "text": "Contract can mint"
+      },
+      {
+        "code": "OWNER_ACTIVE",
+        "severity": "caution",
+        "text": "Owner can still change parameters"
+      }
+    ]
+  },
+  "market": {
+    "chart_url": null,
+    "volume_usd_1h": 12000,
+    "volume_usd_6h": 45000,
+    "volume_usd_24h": 88000,
+    "buys_24h": 40,
+    "sells_24h": 11,
+    "traders_24h": 18
+  },
+  "people": {
+    "creator": {
+      "address": "0x3333333333333333333333333333333333333333",
+      "launch_count": 9,
+      "explorer_url": "https://explorer.robinhood.com/address/0x3333333333333333333333333333333333333333"
+    },
+    "holders": null
+  },
+  "swap_urls": null
+}

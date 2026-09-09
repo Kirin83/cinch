@@ -1,0 +1,10 @@
+{
+  "type": "home",
+  "title": "cinch · Robinhood Chain",
+  "lines": [
+    { "ticker": "HIMS", "float_locked_pct": 0.53, "meme_vol_24h_usd": 410000 },
+    { "ticker": "AMC", "float_locked_pct": 0.21, "meme_vol_24h_usd": 88000 },
+    { "ticker": "NVDA", "float_locked_pct": 0.042, "meme_vol_24h_usd": 12000 }
+  ],
+  "url": "https://cinch.report"
+}

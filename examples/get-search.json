@@ -1,0 +1,22 @@
+{
+  "query": "HIMS",
+  "stocks": [
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "contract_hex": "0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b",
+      "float_locked_pct": 0.531,
+      "path": "/s/HIMS"
+    }
+  ],
+  "tokens": [
+    {
+      "address": "0xcc0000000000000000000000000000000000boner",
+      "symbol": "BONER",
+      "pair_quality": "canonical",
+      "stock_ticker": "HIMS",
+      "stock_contract_hex": "0x05a3d8e2f91b7a6cd4e8f0123456789abcde222b",
+      "path": "/t/0xcc0000000000000000000000000000000000boner"
+    }
+  ]
+}
