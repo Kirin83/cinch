@@ -26,9 +26,9 @@ export INDEXER_CATCHUP_MS="${INDEXER_CATCHUP_MS:-90000}"
 sleep_s="${INDEXER_SLEEP_SECONDS:-1800}"
 while true; do
   echo "prod tick vol24h $(date -u +%Y-%m-%dT%H:%M:%SZ) node=$(node -v)"
-  npx tsx indexer/run.ts --vol24h
+  node --import tsx indexer/run.ts --vol24h
   echo "prod tick once $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-  npx tsx indexer/run.ts --once
+  node --import tsx indexer/run.ts --once
   echo "prod tick sleep ${sleep_s}s"
   sleep "$sleep_s"
 done
