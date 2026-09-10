@@ -2367,6 +2367,7 @@ async function backfillVol24h(publicClient: PublicClient) {
   }
   if (!missing.rows.length) console.log("graduated without pool_id: none");
 
+  const canonicalOnly = process.env.INDEXER_VOL24H_CANONICAL === "1";
   const { rows: pools } = await db().query<{
     id: string;
     pool_id: string;
@@ -2380,7 +2381,11 @@ async function backfillVol24h(publicClient: PublicClient) {
     FROM pools p
     LEFT JOIN tokens t ON t.address = p.meme_address
     WHERE p.pool_id ~ '^0x[0-9a-fA-F]{64}$'
-      AND (p.graduated OR p.meme_address IS NOT NULL)
+      AND ${
+        canonicalOnly
+          ? "p.pair_quality IN ('pair_canonical', 'canonical') AND p.meme_address IS NOT NULL"
+          : "(p.graduated OR p.meme_address IS NOT NULL)"
+      }
   `);
   const v4ById = new Map<string, (typeof pools)[number]>();
   for (const p of pools) v4ById.set(p.pool_id.toLowerCase(), p);
